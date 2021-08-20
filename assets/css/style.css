@@ -1,0 +1,35 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(61,115,145,0.39);
+    color: black;
+    font-size: 1.5rem;
+}
+#graph{
+    margin-top: 1rem;
+    width:100%;height:30rem;
+    display: block;
+    text-align: center;
+}
+.check{
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+}
+#recovery{
+    display: none;
+}
+header{
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+}
+#curves{
+    text-align: center;
+}
+.btn-primary{
+    background-color: black;
+    border: none;
+    border-radius: 0;
+}
+.btn-primary:hover,.btn-primary:focus{
+    background-color: red !important;
+}

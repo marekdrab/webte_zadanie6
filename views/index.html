@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Zadanie 6</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/bootstrap/bootstrap.js"></script>
+    <script src="../js/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script defer src="../js/template.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>Zadanie 6</header>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="curves">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" onclick="addSin();" checked>Sinus
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" onclick="addCos();" checked>Cosinus
+                </div>
+            </form>
+            <div id="graph"></div>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <button class="btn btn-primary" id="terminator" onclick="endGraph();">Koniec</button>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+            <amplitude-buttons></amplitude-buttons>
+    </div>
+</div>
+<script src="../js/script.js"></script>
+<script>fetchData()</script>
+</body>
+</html>
